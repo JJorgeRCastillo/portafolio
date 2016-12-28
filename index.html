@@ -114,7 +114,7 @@
                     <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
-                                <i class="fa fa-search-plus fa-1x"></i>SisHotelSoft
+                                <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
                         <img src="img/portfolio/github.png" class="img-responsive" alt="" style="margin: auto">
@@ -162,21 +162,22 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <form name="sentMessage" id="contactForm" novalidate>
+                    <form action="https://formspree.io/jjorge.rc93@gmail.com"  method="POST" novalidate>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Nombre</label>
-                                <input type="text" class="form-control" placeholder="Nombre" id="name" required data-validation-required-message="Ingrese su nombre.">
+                                <input type="text" class="form-control" name="name" placeholder="Nombre" id="name" required data-validation-required-message="Ingrese su nombre.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Correo Electrónico</label>
-                                <input type="email" class="form-control" placeholder="Correo Electrónico" id="email" required data-validation-required-message="Ingrese su correo electrónico.">
+                                <input type="email" class="form-control" name="_replyto" placeholder="Correo Electrónico" id="email" required data-validation-required-message="Ingrese su correo electrónico.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
+                        <!--
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Teléfono</label>
@@ -191,11 +192,11 @@
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
-                        <br>
+                        <br> -->
                         <div id="success"></div>
                         <div class="row">
                             <div class="form-group col-xs-12 text-center">
-                                <button type="submit" class="btn btn-success btn-lg">Enviar</button>
+                                <button type="submit" class="btn btn-success btn-lg" value="Send">Enviar</button>
                             </div>
                         </div>
                     </form>
