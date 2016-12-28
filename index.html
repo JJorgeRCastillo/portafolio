@@ -162,37 +162,36 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <form action="https://formspree.io/jjorge.rc93@gmail.com"  method="POST" novalidate>
+                    <form name="gform" id="gform" action="https://docs.google.com/forms/d/e/1FAIpQLSd-fS1s2OBoQMdJtGrnnOBpjmdE1LxZxnDrrwJNqGnHdPOAzA/formResponse" target="hidden_iframe" onsubmit="submitted=true;" novalidate>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Nombre</label>
-                                <input type="text" class="form-control" name="name" placeholder="Nombre" id="name" required data-validation-required-message="Ingrese su nombre.">
+                                <input type="text" class="form-control" name="entry.2105322363" placeholder="Nombre" id="entry.2105322363" required data-validation-required-message="Ingrese su nombre.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Correo Electrónico</label>
-                                <input type="email" class="form-control" name="_replyto" placeholder="Correo Electrónico" id="email" required data-validation-required-message="Ingrese su correo electrónico.">
+                                <input type="email" class="form-control" name="entry.828599768" placeholder="Correo Electrónico" id="entry.828599768" required data-validation-required-message="Ingrese su correo electrónico.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
-                        <!--
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Teléfono</label>
-                                <input type="tel" class="form-control" placeholder="Teléfono" id="phone" required data-validation-required-message="Ingrese su número de teléfono.">
+                                <input type="tel" class="form-control" name="entry.1388747081" placeholder="Teléfono" id="entry.1388747081" required data-validation-required-message="Ingrese su número de teléfono.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Mensaje</label>
-                                <textarea rows="5" class="form-control" placeholder="Mensaje" id="message" required data-validation-required-message="Ingrese un mensaje."></textarea>
+                                <textarea rows="5" class="form-control" name="entry.1075684223" placeholder="Mensaje" id="entry.1075684223" required data-validation-required-message="Ingrese un mensaje."></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
-                        <br> -->
+                        <br> 
                         <div id="success"></div>
                         <div class="row">
                             <div class="form-group col-xs-12 text-center">
@@ -200,6 +199,7 @@
                             </div>
                         </div>
                     </form>
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
                 </div>
             </div>
         </div>
@@ -372,7 +372,20 @@
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
     <script src="js/freelancer.min.js"></script>
+    <script type="text/javascript">
+        $('#gform').on('submit', function(e) {
+            //$('#gform *').fadeOut(2000);
+            $('#success').html("<div class='alert alert-success'>");
+                    $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+                        .append("</button>");
+                    $('#success > .alert-success')
+                        .append("<strong>Tu mensaje se ha enviado. </strong>");
+                    $('#success > .alert-success')
+                        .append('</div>');
 
+                    $('#gform').trigger("reset");
+        });
+    </script>
 </body>
 
 </html>
