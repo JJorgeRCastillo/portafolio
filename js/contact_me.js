@@ -21,9 +21,8 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "././page/contacto.php",
                 type: "POST",
-                datatype: "jsonp",
+                url: "././page/contacto.php",
                 data: {
                     name: name,
                     phone: phone,
