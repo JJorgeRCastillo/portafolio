@@ -2,8 +2,8 @@ var webpack = require('webpack');
 var path = require('path');
 var htmlWebPackPlugin = require('html-webpack-plugin');
 
-var BUILD_DIR = path.resolve(__dirname, 'js');
-var APP_DIR = path.resolve(__dirname, 'jsx');
+var BUILD_DIR = path.resolve(__dirname, 'src/js');
+var APP_DIR = path.resolve(__dirname, 'src/jsx');
 
 var config = {
    entry: APP_DIR + "/App.jsx",
@@ -31,7 +31,7 @@ var config = {
        template: './index.html'
      }),
      new webpack.DefinePlugin({
-       'process.env.NODE_ENV': JSON.stringify('production')
+       'process.env.NODE_ENV': JSON.stringify('test')
      })
    ],
    devServer: {
