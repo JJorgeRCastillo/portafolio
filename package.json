@@ -5,7 +5,7 @@
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server -d --content-base src --inline --hot",
+    "dev": "webpack-dev-server -d --content-base / --inline --hot",
     "prod": "webpack -d",
     "serve": "webpack -d && webpack-dev-server -d --content-base src --inline --hot"
   },
