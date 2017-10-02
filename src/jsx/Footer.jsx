@@ -20,10 +20,10 @@ export class Footer extends React.Component {
                         <h3>Mis redes sociales</h3>
                         <ul className="list-inline">
                            <li>
-                              <a href="https://www.facebook.com/jjorgercastillo" className="btn-social btn-outline"><i className="fa fa-fw fa-facebook"></i></a>
+                              <a href="https://www.facebook.com/jjrodcast" className="btn-social btn-outline"><i className="fa fa-fw fa-facebook"></i></a>
                            </li>
                            <li>
-                              <a href="https://twitter.com/JJorgeRCastillo" className="btn-social btn-outline"><i className="fa fa-fw fa-twitter"></i></a>
+                              <a href="https://twitter.com/jjrodcast" className="btn-social btn-outline"><i className="fa fa-fw fa-twitter"></i></a>
                            </li>
                            <li>
                               <a href="https://www.linkedin.com/in/jorge-rodr%C3%ADguez-castillo-b799a17a" className="btn-social btn-outline"><i className="fa fa-fw fa-linkedin"></i></a>
