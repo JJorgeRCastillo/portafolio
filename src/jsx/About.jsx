@@ -7,7 +7,7 @@ const objAbout = {
    title: "Acerca de mí",
    descripction: "Mi nombre es Jorge Rodríguez Castillo, graduado de la carrera de Ingeniería de Sistemas Computacionales me gusta mucho la investigación, y sobre todo cursos que tienen que ver con mucha lógica. Me gusta las ciencias de la computación y cosas con Machine Learning.",
    subdescription: "Soy programador tanto de páginas web y de aplicaciones móviles para Android, conozco tecnologías como ASP.NET, Java, JavaScript, Python, R, Matlab, etc. Puedes contactarme para desarrollar proyectos o investigar cosas interesantes y darles solución con nuevas tecnologías.",
-   linkedin: "https://pe.linkedin.com/in/jorge-rodríguez-castillo-b799a17a",
+   linkedin: "https://pe.linkedin.com/in/jorge-rodríguez-castillo",
    btnLinkedin: "Mi Linkedin"
 };
 
